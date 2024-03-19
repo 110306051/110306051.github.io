@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+header {
+  min-height: 9vh;
+}
+header section {
+  min-height: 9vh;
+  padding: 1rem 0.5rem;
+  z-index: 5;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #e2d5be;
+  box-shadow: 1px 1px 20px #000000;
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header div.logo {
+  margin-left: 1rem;
+  flex: 5 1 200px;
+  display: flex;
+  align-items: center;
+}
+header div.logo img {
+  border-radius: 50%;
+  border: #36261c 2px solid;
+  width: 3vw;
+  height: 3vw;
+  margin-right: 1rem;
+}
+header nav {
+  flex: 2 1 150px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li {
+  font-size: 1.5 rem;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+header nav ul li a.selected {
+  color: #693300;
+}
+
+main form.addPost {
+  padding: 3rem;
+  width: 100%;
+  min-height: 60vh;
+  background-color: #bda887;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main form.addPost div.post {
+  background-color: #e2d5be;
+  width: 25vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  margin-top: 3rem;
+}
+main form.addPost div.post img.logo {
+  content: url("../Eunchae/Logo.jpg");
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: #36261c 2px solid;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+main form.addPost div.post div.postImg {
+  background-color: #fff;
+  width: 25vw;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main form.addPost div.post div.postImg video {
+  margin-top: 3rem;
+  width: auto;
+  max-width: 20vw;
+  height: auto;
+  border-radius: 22px;
+}
+main form.addPost div.post div.postImg img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+main form.addPost div.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  background-color: #c9b89a;
+  border-radius: 25px;
+  margin: 2rem;
+}
+main form.addPost div.add input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+main form.addPost div.add label {
+  cursor: pointer;
+  color: #fff1d8;
+  padding: 15px 70px;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-size: large;
+}
+main form.addPost div.add:hover {
+  background-color: #8d816d;
+}
+main section.backImage {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../Eunchae/background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main section.backImage h3 {
+  font-size: 4rem;
+  color: #e2d5be;
+  background-color: rgba(100, 91, 71, 0.8);
+  padding: 0.5rem 2rem;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Prompt", sans-serif;
+}
+main section.backImage button.enter {
+  background-color: #fff1d8;
+  width: 300px;
+  height: 70px;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 22px;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+}
+main section.backImage button.enter:hover {
+  background-color: #9c8f79;
+}
+main section.backImage div.filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+main section.form {
+  position: relative;
+  background-image: url("../Eunchae/background2.jpg");
+  background-position: right 400% bottom 90%;
+  width: 100%;
+  min-height: 80vh;
+  z-index: 1;
+}
+main section.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main section.form form div.backGround {
+  border: 2px #fff1d8 solid;
+  margin-top: 10vh;
+  background-color: #d4c7b6;
+  min-height: 50vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 25px #000000;
+}
+main section.form form div.backGround div.logo {
+  padding: 3rem 0rem 1rem 0rem;
+}
+main section.form form div.backGround div.logo img {
+  color: #fff;
+  border-radius: 50%;
+  width: 7vw;
+  height: 7vw;
+}
+main section.form form div label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+}
+main section.form form div input {
+  border-radius: 22px;
+  border: #36261c 3px solid;
+  padding: 0rem 1rem;
+  width: 300px;
+  height: 45px;
+}
+main section.form form div button {
+  font-size: large;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  background-color: #a5977e;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px #36261c solid;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+main section.form form div button:hover {
+  color: #e2d5be;
+  background-color: #fff;
+  border: 2px #e2d5be solid;
+}
+main section.form form div ul {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  list-style-type: none;
+  font-size: 0.9rem;
+}
+main section.form form div ul li a {
+  color: #693300;
+  text-decoration: none;
+}
+main section.form div.input {
+  padding: 0.7rem 2rem;
+}
+main section.form div.button {
+  padding: 2rem 2rem 0rem 2rem;
+}
+main section.form div.filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+footer {
+  background-color: #e2d5be;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+footer div.logo {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+footer div.logo img {
+  border: #36261c 2px solid;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  margin-right: 1rem;
+}
+footer nav {
+  width: 20%;
+}
+footer nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer nav ul li {
+  font-size: 0.75 rem;
+  margin: 1rem;
+}
+footer nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+footer section.links {
+  margin: 1rem;
+}
+footer section.links a {
+  margin: 0rem 1rem;
+}
+footer section.links a img {
+  width: 3vw;
+  height: 3vw;
+}
+
+@media screen and (max-width: 550px) {
+  header div.logo {
+    margin-left: 0rem;
+  }
+  header div.logo img {
+    width: 10vw;
+    height: 10vw;
+  }
+}/*# sourceMappingURL=style.css.map */
