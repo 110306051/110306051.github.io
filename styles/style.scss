@@ -1,438 +1,395 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans TC', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }
 
+header {
+  min-height: 9vh;
 
-header{
+  section {
     min-height: 9vh;
-    
-    section{
-        min-height: 9vh;
-        padding: 1rem 0.5rem;
-        z-index: 5;
-        padding: 1rem 0.5rem;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: #e2d5be;
-        // box-shadow: #000000 2px;
-        box-shadow: 1px 1px 20px #000000;
-        transition:all 0.5s ease;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        
-    }
-
-    div.logo {
-
-        margin-left: 1rem;
-        flex:  5 1 200px;
-        display: flex;
-        align-items: center;
-        img{
-            border-radius: 50%;
-            border: #36261c 2px solid;
-            width: 3vw;
-            height: 3vw;  
-            margin-right: 1rem;
-        }
-    }
-    nav {
-        
-        flex: 2 1 150px;
-        ul{
-            
-            display: flex;
-            list-style-type: none;
-            justify-content: space-around;
-            li{
-                font-size: 1.5 rem;
-                
-                a{  
-                    color: black;
-                    text-decoration: none;
-                    
-                } 
-
-                a.selected{
-                    color: #693300;
-                }
-            }
-        }
-    }
-
-   
-}
-
-main{
-
-    form.addPost{
-
-        padding: 3rem;
-        width: 100%;
-        min-height: 60vh;
-        background-color: #bda887;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        div.post{
-            background-color: #e2d5be;
-            width: 25vw;
-            height: 70vh;
-            display: flex;
-            // align-items: center;
-            // justify-content: center;
-            flex-direction: column;
-            border-radius: 25px;
-            margin-top: 3rem;
-
-            img.logo{
-
-                    content: url("../Eunchae/Logo.jpg");
-                    margin-left: 1rem;
-                    margin-top: 1rem;
-                    margin-bottom: 0.75rem;
-                    margin-right: 1rem;
-                    // flex:  5 1 200px;
-                    // display: flex;
-                    // align-items: center;
-                    border-radius: 50%;
-                    border: #36261c 2px solid;
-                    width: 2.5vw;
-                    height: 2.5vw;  
-                    
-                    
-                
-            }
-
-            div.postImg{
-
-                // margin-top: 4rem;
-                background-color: #fff;
-                width: 25vw;
-                height: 33vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                video{
-                    margin-top: 3rem;
-                    width:auto;
-                    max-width: 20vw;
-                    height: auto;
-                    border-radius: 22px;
-                    
-                }
-
-                img{
-                    max-height: 100%;  
-                    max-width: 100%; 
-                    width: auto;
-                    height: auto;
-                    
-                    top: 0;  
-                    bottom: 0;  
-                    left: 0;  
-                    right: 0;  
-                    margin: auto;
-                    
-                }
-            }
-
-            
-        }
-    
-        div.add{
-            
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 150px;
-            height: 50px;
-            background-color: #c9b89a;
-            border-radius: 25px;
-            margin: 2rem;
-            // cursor: pointer;
-            
-            input{
-
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0,0,0,0);
-                border: 0;
-            }
-
-            label{
-                cursor: pointer;
-                color: #fff1d8;
-                padding: 15px 70px;
-                border-radius: 25px;
-                font-weight: bolder;
-                font-size: large;
-            }
-
-        }
-
-        div.add:hover{
-            background-color: #8d816d;
-
-        }
-    }
-
-
-    section.backImage{
-        min-height: 100vh;
-        width: 100%;
-        background-image: url("../Eunchae/background.jpg");
-        background-size: cover;
-        background-position: center;
-        position: relative;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        
-        h3{
-            font-size: 4rem;
-            color: #e2d5be;
-            background-color: rgb(100, 91, 71 , 0.8);
-            padding: 0.5rem 2rem;
-            font-family: 'Noto Sans TC', sans-serif;
-            font-family: 'Prompt', sans-serif;
-        }
-
-        button.enter{
-            background-color: #fff1d8;
-            width:300px;
-            height:70px;
-            padding: 1rem 1.5rem;
-            font-size: 1.5rem;
-            border-radius: 22px;
-            margin-top: 1rem;
-            border: none;
-            cursor: pointer;
-        }
-
-        button.enter:hover{
-            background-color: #9c8f79;
-        }
-
-        div.filter{
-            background-color: rgba(0,0,0,0.2);
-            min-height: 100vh;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            z-index: -1;
-        }
-    }
-
-    section.form{
-        position: relative;
-        background-image: url("../Eunchae/background2.jpg");
-        background-position: right 400% bottom 90% ;
-        width: 100%;
-        min-height: 80vh;
-        z-index: 1;
-        
-        
-
-        form{
-
-            
-            display: flex;
-            flex-direction: column;            
-            align-items: center;
-            justify-content: space-around;
-
-            div.backGround{
-
-                border: 2px #fff1d8 solid;
-                margin-top: 10vh;
-                background-color: #d4c7b6;
-                min-height: 50vh;
-                border-radius: 20px;
-                display: flex;
-                flex-direction: column;            
-                align-items: center;
-                box-shadow: 10px 10px 25px #000000;
-                div.logo {
-
-                    padding: 3rem  0rem 1rem 0rem;
-                    // display: flex;
-                    // align-items: center;
-                    img{
-                        color: #fff;
-                        border-radius: 50%;
-                        width: 7vw;
-                        height: 7vw;  
-                        
-                    }
-                }
-            }
-
-            div{
-                
-                label{
-                    
-                    font-weight: 600;
-                    font-size: 1.2rem;
-                    color: rgb(0, 0, 0);
-                }
-                
-                input{
-                    
-                    border-radius: 22px;
-                    border: #36261c 3px solid;
-                    padding: 0rem 1rem;
-                    width:300px;
-                    height:45px;
-                    
-                }
-
-                button{
-
-                    font-size: large;
-                    width:200px;
-                    height:40px;
-                    border:0;
-                    background-color: #a5977e;
-                    color:#fff;
-                    border-radius:10px;
-                    border: 2px #36261c solid;
-                    margin-left: 1rem;
-                    cursor:pointer;
-                }
-
-                button:hover{
-                    color:#e2d5be;
-                    background-color:#fff;
-                    border:2px #e2d5be solid;
-                }
-                
-                ul{
-                    margin-top: 0.5rem;
-                    margin-left: 1rem;
-                    list-style-type: none;
-                    font-size: 0.9rem;
-                    li{
-                        
-                        a{  
-                            
-                            color: #693300;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            } 
-        }
-
-        div.input{
-           
-            padding: 0.7rem 2rem;
-        }
-
-        div.button{
-            padding: 2rem 2rem 0rem 2rem;
-        }
-            
-        div.filter{
-
-                background-color: rgba(0,0,0,0.3);
-                min-height: 80vh;
-                width: 100%;
-                position: absolute;
-                top: 0;
-                z-index: -1;
-            }
-    }
-}
-
-footer{
-    
-    background-color: #e2d5be;
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 1rem 0.5rem;
-    // justify-content: space-between;
+    z-index: 5;
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #e2d5be;
+    // box-shadow: #000000 2px;
+    box-shadow: 1px 1px 20px #000000;
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
-    div.logo {
-
-        margin: 1rem ;
-        display: flex;
-        align-items: center;
-        img{
-            border: #36261c 2px solid;
-            border-radius: 50%;
-            width: 5vw;
-            height: 5vw;  
-            margin-right: 1rem;
-        }
+  div.logo {
+    margin-left: 1rem;
+    flex: 5 1 200px;
+    display: flex;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      border: #36261c 2px solid;
+      width: 3vw;
+      height: 3vw;
+      margin-right: 1rem;
     }
+  }
+  nav {
+    flex: 2 1 150px;
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      li {
+        font-size: 1.5 rem;
 
-    nav{
-        width: 20%;
-        ul{
-            
-            display: flex;
-            list-style-type: none;
-            width: 100%;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            li{
-                font-size: 0.75 rem;
-                margin: 1rem ;
-                a{
-                    color: black;
-                    text-decoration: none;
-                    
-                }
-            }
+        a {
+          color: black;
+          text-decoration: none;
         }
-    }
 
-    section.links{
-        margin: 1rem ;
-        a{
-            margin: 0rem 1rem;
-            img{
-                width: 3vw;
-                height: 3vw;
-            }
-
+        a.selected {
+          color: #693300;
         }
+      }
     }
+  }
 }
 
+main {
+  form.addPost {
+    padding: 3rem;
+    width: 100%;
+    min-height: 60vh;
+    background-color: #bda887;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    div.post {
+      background-color: #e2d5be;
+      width: 25vw;
+      height: 70vh;
+      display: flex;
+      // align-items: center;
+      // justify-content: center;
+      flex-direction: column;
+      border-radius: 25px;
+      margin-top: 3rem;
+
+      img.logo {
+        content: url("../Eunchae/Logo.jpg");
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+        margin-right: 1rem;
+        // flex:  5 1 200px;
+        // display: flex;
+        // align-items: center;
+        border-radius: 50%;
+        border: #36261c 2px solid;
+        width: 2.5vw;
+        height: 2.5vw;
+      }
+
+      div.postImg {
+        // margin-top: 4rem;
+        background-color: #fff;
+        width: 25vw;
+        height: 33vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        video {
+          margin-top: 3rem;
+          width: auto;
+          max-width: 20vw;
+          height: auto;
+          border-radius: 22px;
+        }
+
+        img {
+          max-height: 100%;
+          max-width: 100%;
+          width: auto;
+          height: auto;
+
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+    }
+
+    div.add {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 50px;
+      background-color: #c9b89a;
+      border-radius: 25px;
+      margin: 2rem;
+      // cursor: pointer;
+
+      input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+
+      label {
+        cursor: pointer;
+        color: #fff1d8;
+        padding: 15px 70px;
+        border-radius: 25px;
+        font-weight: bolder;
+        font-size: large;
+      }
+    }
+
+    div.add:hover {
+      background-color: #8d816d;
+    }
+  }
+
+  section.backImage {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../Eunchae/HomeBackground.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      font-size: 4rem;
+      color: #e2d5be;
+      background-color: rgb(100, 91, 71, 0.8);
+      padding: 0.5rem 2rem;
+      font-family: "Noto Sans TC", sans-serif;
+      font-family: "Prompt", sans-serif;
+    }
+
+    button.enter {
+      background-color: #fff1d8;
+      width: 300px;
+      height: 70px;
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+      border-radius: 22px;
+      margin-top: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    button.enter:hover {
+      background-color: #9c8f79;
+    }
+
+    div.filter {
+      background-color: rgba(0, 0, 0, 0.2);
+      min-height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  section.form {
+    position: relative;
+    background-image: url("../Eunchae/background2.jpg");
+    background-position: right 400% bottom 90%;
+    width: 100%;
+    min-height: 80vh;
+    z-index: 1;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      div.backGround {
+        border: 2px #fff1d8 solid;
+        margin-top: 10vh;
+        background-color: #d4c7b6;
+        min-height: 50vh;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 10px 10px 25px #000000;
+        div.logo {
+          padding: 3rem 0rem 1rem 0rem;
+          // display: flex;
+          // align-items: center;
+          img {
+            color: #fff;
+            border-radius: 50%;
+            width: 7vw;
+            height: 7vw;
+          }
+        }
+      }
+
+      div {
+        label {
+          font-weight: 600;
+          font-size: 1.2rem;
+          color: rgb(0, 0, 0);
+        }
+
+        input {
+          border-radius: 22px;
+          border: #36261c 3px solid;
+          padding: 0rem 1rem;
+          width: 300px;
+          height: 45px;
+        }
+
+        button {
+          font-size: large;
+          width: 200px;
+          height: 40px;
+          border: 0;
+          background-color: #a5977e;
+          color: #fff;
+          border-radius: 10px;
+          border: 2px #36261c solid;
+          margin-left: 1rem;
+          cursor: pointer;
+        }
+
+        button:hover {
+          color: #e2d5be;
+          background-color: #fff;
+          border: 2px #e2d5be solid;
+        }
+
+        ul {
+          margin-top: 0.5rem;
+          margin-left: 1rem;
+          list-style-type: none;
+          font-size: 0.9rem;
+          li {
+            a {
+              color: #693300;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    div.input {
+      padding: 0.7rem 2rem;
+    }
+
+    div.button {
+      padding: 2rem 2rem 0rem 2rem;
+    }
+
+    div.filter {
+      background-color: rgba(0, 0, 0, 0.3);
+      min-height: 80vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+}
+
+footer {
+  background-color: #e2d5be;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  // justify-content: space-between;
+
+  div.logo {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    img {
+      border: #36261c 2px solid;
+      border-radius: 50%;
+      width: 5vw;
+      height: 5vw;
+      margin-right: 1rem;
+    }
+  }
+
+  nav {
+    width: 20%;
+    ul {
+      display: flex;
+      list-style-type: none;
+      width: 100%;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      li {
+        font-size: 0.75 rem;
+        margin: 1rem;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  section.links {
+    margin: 1rem;
+    a {
+      margin: 0rem 1rem;
+      img {
+        width: 3vw;
+        height: 3vw;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 550px) {
-    
-    header{
-        div.logo{
-            margin-left: 0rem;
-            img{
-                width: 10vw;
-                height: 10vw;
-            }
-        }
+  header {
+    div.logo {
+      margin-left: 0rem;
+      img {
+        width: 10vw;
+        height: 10vw;
+      }
     }
+  }
 }
-
