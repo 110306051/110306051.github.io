@@ -226,7 +226,7 @@ main {
 
   section.form {
     position: relative;
-    background-image: url("../Eunchae/background2.jpg");
+    background-image: url("../Eunchae/HomeBackground.png");
     background-position: right 400% bottom 90%;
     width: 100%;
     min-height: 80vh;
@@ -280,19 +280,19 @@ main {
           font-size: large;
           width: 200px;
           height: 40px;
-          border: 0;
-          background-color: #a5977e;
-          color: #fff;
-          border-radius: 10px;
-          border: 2px #36261c solid;
+          border: 10px;
+          background-color: #00000000;
+          color: #000000;
+          border-radius: 50%;
+          border: 2px #000000 solid;
           margin-left: 1rem;
           cursor: pointer;
         }
 
         button:hover {
-          color: #e2d5be;
-          background-color: #fff;
-          border: 2px #e2d5be solid;
+          color: #ffffff;
+          background-color: #000000;
+          border: 2px #ffffff solid;
         }
 
         ul {
