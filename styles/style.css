@@ -77,9 +77,9 @@ main form.addPost {
   flex-direction: column;
 }
 main form.addPost div.post {
-  background-color: #608157;
+  background-color: #c8ccb5;
   width: 70vw;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
