@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeremy Gallery - Sign Up</title>
+    <title>HOMEWORK SYSTEM - Overview</title>
     <meta name="description" content="Jeremy Huang Gallery" />
     <!--Google font setting-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,38 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="C:\Users\a2466\OneDrive\桌面\hw_website\styles\style.css"
-    />
-    <link
-      rel="icon"
-      href="C:\Users\a2466\OneDrive\桌面\Jeremy畫廊\Eunchae\Logo.jpg"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="/Eunchae/twitter.png" type="image/x-icon" />
   </head>
   <body>
     <!--Header-->
     <header>
       <section>
         <div class="logo">
-          <a
-            href="file:///C:/Users/a2466/OneDrive/%E6%A1%8C%E9%9D%A2/Jeremy%E7%95%AB%E5%BB%8A/Jeremy%20Gallery.html#"
-            ><img
-              src="C:\Users\a2466\OneDrive\桌面\Jeremy畫廊\Eunchae\Logo.jpg"
-              alt="Logo"
-          /></a>
-          <h1>JEREMY GALLERY</h1>
+          <a href=""><img src="/Eunchae/twitter.png" alt="Logo" /></a>
+          <h1>HOMEWORK SYSTEM</h1>
         </div>
         <nav>
           <ul>
-            <li><a class="head" href="Jeremy Gallery.html">首頁</a></li>
+            <li><a class="head" href="index.html">首頁</a></li>
             <li style="font-size: 1.5rem">
-              <a class="selected" style="color: #693300" href="gallery.html"
-                >GALLERY</a
+              <a class="selected" style="color: #2f641b" href="gallery.html"
+                >HOMEWORK</a
               >
             </li>
-            <li><a href="signup.html">會員登入</a></li>
+            <li><a href="">會員登入</a></li>
             <li><a href="#">聯絡我們</a></li>
           </ul>
         </nav>
@@ -54,31 +42,36 @@
       <section>
         <form class="addPost">
           <section class="postSection">
+            <div class="post">
+              <div class="postImg">
+                <img src="/Eunchae/螢幕擷取畫面 2024-03-20 003342.png" />
+              </div>
+            </div>
+            <div class="post">
+              <div class="post">
+                <img src="/Eunchae/螢幕擷取畫面 2024-03-20 003350.png" />
+              </div>
+            </div>
             <!-- <div class="post">
                 <video id="videotest" src="C:\Users\a2466\OneDrive\桌面\Jeremy畫廊\Eunchae\videoTest.mp4" controls ></video>
                 </div> -->
           </section>
-          <div class="add">
+          <!-- <div class="add">
             <label for="file" class="addButton">+</label>
             <input
               id="file"
               type="file"
               onchange="selectTextFile(this.files)"
             />
-            <!-- <h2>+</h2> -->
-          </div>
+          </div> -->
         </form>
       </section>
     </main>
 
     <footer>
       <div class="logo">
-        <a href="#"
-          ><img
-            src="C:\Users\a2466\OneDrive\桌面\Jeremy畫廊\Eunchae\Logo.jpg"
-            alt="Logo"
-        /></a>
-        <h1>JEREMY GALLERY</h1>
+        <a href="#"><img src="/Eunchae/twitter.png" alt="Logo" /></a>
+        <h1>HOMEWORK SYSTEM</h1>
       </div>
       <nav>
         <ul>
@@ -89,29 +82,21 @@
         </ul>
       </nav>
       <section class="links">
-        <a href="https://www.facebook.com/profile.php?id=100003373225222"
-          ><img
-            src="C:\Users\a2466\OneDrive\桌面\Jeremy畫廊\Eunchae\facebook.png"
-            alt="facebook"
+        <a href="https://www.facebook.com"
+          ><img src="/Eunchae/facebook.png" alt="facebook"
         /></a>
-        <a href="https://www.instagram.com/_ineedcigarette/"
-          ><img
-            src="C:\Users\a2466\OneDrive\桌面\Jeremy畫廊\Eunchae\instagram.png"
-            alt="instagram"
+        <a href="https://www.instagram.com"
+          ><img src="/Eunchae/instagram.png" alt="instagram"
         /></a>
-        <a href="#"
-          ><img
-            src="C:\Users\a2466\OneDrive\桌面\Jeremy畫廊\Eunchae\twitter.png"
-            alt="twitter"
-        /></a>
-        <a href="https://youtube.com/@SmokingCat1223?si=lYBZV9WcPRQflzcG"
-          ><img
-            src="C:\Users\a2466\OneDrive\桌面\Jeremy畫廊\Eunchae\youtube.png"
-            alt="youtube"
+        <a href="#"><img src="/Eunchae/twitter.png" alt="twitter" /></a>
+        <a href="https://youtube.com/"
+          ><img src="/Eunchae/youtube.png" alt="youtube"
         /></a>
       </section>
     </footer>
   </body>
-  <script src="C:\Users\a2466\OneDrive\桌面\hw_website\gallery_video.js"></script>
-  <script src="C:\Users\a2466\OneDrive\桌面\hw_website\header.js"></script>
+  <script src="header.js"></script>
+  <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="javascript.js"></script>
 </html>
