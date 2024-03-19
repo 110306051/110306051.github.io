@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -5,22 +6,27 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
 header {
-  min-height: 9vh;
+  min-height: 8vh;
 }
 header section {
-  min-height: 9vh;
+  min-height: 10vh;
   padding: 1rem 0.5rem;
   z-index: 5;
   padding: 1rem 0.5rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #e2d5be;
+  background-color: #b0c3ab;
   box-shadow: 1px 1px 20px #000000;
   transition: all 0.5s ease;
   position: fixed;
@@ -57,43 +63,34 @@ header nav ul li a {
   text-decoration: none;
 }
 header nav ul li a.selected {
-  color: #693300;
+  color: #253c3a;
 }
 
 main form.addPost {
   padding: 3rem;
   width: 100%;
   min-height: 60vh;
-  background-color: #bda887;
+  background-color: #b0c3ab;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 main form.addPost div.post {
-  background-color: #e2d5be;
-  width: 25vw;
-  height: 70vh;
+  background-color: #608157;
+  width: 70vw;
+  height: 80vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   border-radius: 25px;
   margin-top: 3rem;
 }
-main form.addPost div.post img.logo {
-  content: url("../Eunchae/Logo.jpg");
-  margin-left: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
-  margin-right: 1rem;
-  border-radius: 50%;
-  border: #36261c 2px solid;
-  width: 2.5vw;
-  height: 2.5vw;
-}
 main form.addPost div.post div.postImg {
   background-color: #fff;
-  width: 25vw;
-  height: 33vh;
+  width: 70vw;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,7 +119,7 @@ main form.addPost div.add {
   justify-content: center;
   width: 150px;
   height: 50px;
-  background-color: #c9b89a;
+  background-color: #c3d9be;
   border-radius: 25px;
   margin: 2rem;
 }
@@ -145,20 +142,29 @@ main form.addPost div.add label {
   font-size: large;
 }
 main form.addPost div.add:hover {
-  background-color: #8d816d;
+  background-color: #b0c3ab;
 }
 main section.backImage {
   min-height: 100vh;
   width: 100%;
-  background-image: url("../Eunchae/background.jpg");
+  background-image: url("../Eunchae/HomeBackground.png");
   background-size: cover;
   background-position: center;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+}
+main section.backImage .container {
+  position: absolute;
+  left: 8%; /* 使按钮水平居中 */
+  top: 16%; /* 使按钮垂直居中 */
+}
+main section.backImage h1 {
+  color: #14142c;
+  font-weight: 900;
+  font-size: 160px;
+  display: inline;
+}
+main section.backImage .green {
+  color: #c1e3b1;
 }
 main section.backImage h3 {
   font-size: 4rem;
@@ -169,30 +175,34 @@ main section.backImage h3 {
   font-family: "Prompt", sans-serif;
 }
 main section.backImage button.enter {
-  background-color: #fff1d8;
-  width: 300px;
+  position: absolute;
+  left: 15%; /* 使按钮水平居中 */
+  top: 40%; /* 使按钮垂直居中 */
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  font-weight: bold;
+  background-color: rgba(255, 241, 216, 0);
+  width: 250px;
   height: 70px;
-  padding: 1rem 1.5rem;
-  font-size: 1.5rem;
-  border-radius: 22px;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  border-radius: 50px;
   margin-top: 1rem;
-  border: none;
+  border: 5px solid;
+  border-color: #000000;
   cursor: pointer;
 }
 main section.backImage button.enter:hover {
-  background-color: #9c8f79;
-}
-main section.backImage div.filter {
-  background-color: rgba(0, 0, 0, 0.2);
-  min-height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
+  font-weight: bold;
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #14142c;
 }
 main section.form {
   position: relative;
-  background-image: url("../Eunchae/background2.jpg");
+  background-image: url("../Eunchae/HomeBackground.png");
   background-position: right 400% bottom 90%;
   width: 100%;
   min-height: 80vh;
@@ -231,7 +241,7 @@ main section.form form div label {
 }
 main section.form form div input {
   border-radius: 22px;
-  border: #36261c 3px solid;
+  border: #253c3a 3px solid;
   padding: 0rem 1rem;
   width: 300px;
   height: 45px;
@@ -240,18 +250,18 @@ main section.form form div button {
   font-size: large;
   width: 200px;
   height: 40px;
-  border: 0;
-  background-color: #a5977e;
-  color: #fff;
-  border-radius: 10px;
-  border: 2px #36261c solid;
+  border: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000000;
+  border-radius: 50%;
+  border: 2px #000000 solid;
   margin-left: 1rem;
   cursor: pointer;
 }
 main section.form form div button:hover {
-  color: #e2d5be;
-  background-color: #fff;
-  border: 2px #e2d5be solid;
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px #ffffff solid;
 }
 main section.form form div ul {
   margin-top: 0.5rem;
@@ -260,7 +270,7 @@ main section.form form div ul {
   font-size: 0.9rem;
 }
 main section.form form div ul li a {
-  color: #693300;
+  color: #0f2e11;
   text-decoration: none;
 }
 main section.form div.input {
@@ -279,7 +289,7 @@ main section.form div.filter {
 }
 
 footer {
-  background-color: #e2d5be;
+  background-color: #b0c3ab;
   min-height: 30vh;
   display: flex;
   flex-direction: column;
@@ -292,7 +302,7 @@ footer div.logo {
   align-items: center;
 }
 footer div.logo img {
-  border: #36261c 2px solid;
+  border: #253c3a 2px solid;
   border-radius: 50%;
   width: 5vw;
   height: 5vw;
@@ -335,4 +345,6 @@ footer section.links a img {
     width: 10vw;
     height: 10vw;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
