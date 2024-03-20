@@ -66,11 +66,49 @@ header nav ul li a.selected {
   color: #253c3a;
 }
 
+main div.content {
+  background-color: #e9fade;
+  width: 40vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 25px;
+}
+main div.content ul {
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 3rem; /* 添加链接之间的垂直间距 */
+  font-size: 3rem;
+  text-decoration: none;
+}
+main div.content ul li {
+  font-weight: bold;
+  margin-bottom: 3rem; /* 添加链接之间的垂直间距 */
+  font-size: 3rem;
+  text-decoration: none;
+}
+main div.content ul li a {
+  font-weight: bold;
+  font-size: 3 rem;
+  color: black;
+  text-decoration: none;
+}
+main div.content ul li a.selected {
+  color: #253c3a;
+}
+main div.content ul li a:hover {
+  color: #a2b69e;
+}
 main form.addPost {
-  padding: 3rem;
   width: 100%;
+  background-image: url("../Eunchae/HomeBackground.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 3rem;
   min-height: 60vh;
-  background-color: #b0c3ab;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +123,7 @@ main form.addPost div.post {
   justify-content: center;
   flex-direction: column;
   border-radius: 25px;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 main form.addPost div.post div.postImg {
   background-color: #fff;
@@ -117,9 +155,9 @@ main form.addPost div.add {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 50px;
-  background-color: #c3d9be;
+  width: 60%;
+  height: 60px;
+  background-color: #a2b69e;
   border-radius: 25px;
   margin: 2rem;
 }
@@ -135,8 +173,8 @@ main form.addPost div.add input {
 }
 main form.addPost div.add label {
   cursor: pointer;
-  color: #fff1d8;
-  padding: 15px 70px;
+  color: #ffffff;
+  padding: 20px 45%;
   border-radius: 25px;
   font-weight: bolder;
   font-size: large;
@@ -155,7 +193,7 @@ main section.backImage {
 main section.backImage .container {
   position: absolute;
   left: 8%; /* 使按钮水平居中 */
-  top: 16%; /* 使按钮垂直居中 */
+  top: 15%; /* 使按钮垂直居中 */
 }
 main section.backImage h1 {
   color: #14142c;
@@ -183,13 +221,12 @@ main section.backImage button.enter {
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
   font-weight: bold;
+  line-height: 70px;
   background-color: rgba(255, 241, 216, 0);
   width: 250px;
   height: 70px;
-  padding: 1rem 1rem;
   font-size: 2rem;
   border-radius: 50px;
-  margin-top: 1rem;
   border: 5px solid;
   border-color: #000000;
   cursor: pointer;
@@ -335,16 +372,6 @@ footer section.links a {
 footer section.links a img {
   width: 3vw;
   height: 3vw;
-}
-
-@media screen and (max-width: 550px) {
-  header div.logo {
-    margin-left: 0rem;
-  }
-  header div.logo img {
-    width: 10vw;
-    height: 10vw;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

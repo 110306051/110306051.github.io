@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@media screen and (max-width: 800px) {
+  button.enter {
+    width: 50px; /* 調整按鈕寬度以適應手機螢幕 */
+    height: 10px; /* 調整按鈕高度以適應手機螢幕 */
+    font-size: 1.5rem; /* 調整文字大小 */
+    /* 其他樣式 */
+  }
+  h1 {
+    font-size: 20px;
+  }
+  header section {
+    min-height: auto;
+    padding: 0.5rem;
+  }
+  header div.logo {
+    margin-left: 0;
+  }
+  header div.logo img {
+    width: 8vw;
+    height: 8vw;
+  }
+  nav ul li {
+    font-size: 1rem;
+  }
+  main form.addPost {
+    padding: 1rem;
+    min-height: auto;
+  }
+  main form.addPost div.post {
+    width: 90vw;
+    height: 70vh;
+  }
+  main form.addPost div.post div.postImg {
+    width: 90vw;
+    height: 50vh;
+  }
+  footer {
+    min-height: auto;
+  }
+  footer div.logo img {
+    width: 7vw;
+    height: 7vw;
+  }
+  footer nav ul li {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  footer section.links a img {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+/*# sourceMappingURL=mobile-style.css.map */

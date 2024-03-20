@@ -72,16 +72,64 @@ header {
 }
 
 main {
+  div.content {
+    background-color: #e9fade;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    // margin-top: 4rem;
+    ul {
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 3rem; /* 添加链接之间的垂直间距 */
+      font-size: 3rem;
+      text-decoration: none;
+
+      li {
+        font-weight: bold;
+
+        margin-bottom: 3rem; /* 添加链接之间的垂直间距 */
+        font-size: 3rem;
+        text-decoration: none;
+
+        a {
+          font-weight: bold;
+
+          font-size: 3 rem;
+          color: black;
+          text-decoration: none;
+        }
+
+        a.selected {
+          color: #253c3a;
+        }
+        a:hover {
+          color: #a2b69e;
+        }
+      }
+    }
+  }
   form.addPost {
-    padding: 3rem;
+    // min-height: 100vh;
     width: 100%;
+    background-image: url("../Eunchae/HomeBackground.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 3rem;
+    // width: 100%;
     min-height: 60vh;
-    background-color: #b0c3ab;
+    // background-color: #b0c3ab;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     div.post {
       background-color: #c8ccb5;
       width: 70vw;
@@ -93,7 +141,7 @@ main {
       // justify-content: center;
       flex-direction: column;
       border-radius: 25px;
-      margin-top: 3rem;
+      margin-top: 4rem;
 
       div.postImg {
         // margin-top: 4rem;
@@ -130,9 +178,9 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 150px;
-      height: 50px;
-      background-color: #c3d9be;
+      width: 60%;
+      height: 60px;
+      background-color: #a2b69e;
       border-radius: 25px;
       margin: 2rem;
       // cursor: pointer;
@@ -150,8 +198,8 @@ main {
 
       label {
         cursor: pointer;
-        color: #fff1d8;
-        padding: 15px 70px;
+        color: #ffffff;
+        padding: 20px 45%;
         border-radius: 25px;
         font-weight: bolder;
         font-size: large;
@@ -179,7 +227,7 @@ main {
     .container {
       position: absolute;
       left: 8%; /* 使按钮水平居中 */
-      top: 16%; /* 使按钮垂直居中 */
+      top: 15%; /* 使按钮垂直居中 */
     }
     h1 {
       color: #14142c;
@@ -221,7 +269,22 @@ main {
       border-color: #000000;
       cursor: pointer;
     }
-
+    // button.enter {
+    //   left: 15%; /* 使按钮水平居中 */
+    //   top: 40%;
+    //   position: relative;
+    //   display: block;
+    //   margin: 0 auto;
+    //   font-weight: bold;
+    //   background-color: #fff1d800;
+    //   width: 20%; /* 使用相對於視窗寬度的百分比 */
+    //   height: 8vh; /* 使用相對於視窗高度的百分比 */
+    //   font-size: 2rem;
+    //   border-radius: 50px;
+    //   border: 5px solid #000000;
+    //   cursor: pointer;
+    //   /* 其他樣式 */
+    // }
     button.enter:hover {
       font-weight: bold;
       color: #ffffff;
@@ -390,14 +453,14 @@ footer {
   }
 }
 
-@media screen and (max-width: 550px) {
-  header {
-    div.logo {
-      margin-left: 0rem;
-      img {
-        width: 10vw;
-        height: 10vw;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 550px) {
+//   header {
+//     div.logo {
+//       margin-left: 0rem;
+//       img {
+//         width: 10vw;
+//         height: 10vw;
+//       }
+//     }
+//   }
+// }
